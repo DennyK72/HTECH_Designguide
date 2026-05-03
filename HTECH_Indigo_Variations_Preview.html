@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTECH Indigo Variations</title>
+    <style>
+      :root {
+        --bg: #eef1fb;
+        --ink: #17203a;
+        --muted: #5b678f;
+        --card: #ffffff;
+        --line: #d9def3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 24px 80px;
+        background:
+          radial-gradient(circle at top left, rgba(88,112,255,0.16), transparent 26%),
+          linear-gradient(180deg, #f7f8fe 0%, var(--bg) 100%);
+        color: var(--ink);
+        font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      }
+      .wrap {
+        max-width: 1360px;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 40px;
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+      }
+      .intro {
+        max-width: 860px;
+        margin: 0 0 32px;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.65;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        overflow: hidden;
+        background: var(--card);
+        box-shadow: 0 18px 50px rgba(30, 47, 138, 0.08);
+      }
+      .preview {
+        padding: 26px;
+        min-height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .preview img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .meta {
+        padding: 22px 24px 26px;
+      }
+      .meta h2 {
+        margin: 0 0 8px;
+        font-size: 24px;
+      }
+      .meta p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      dl {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+      dt {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #7380aa;
+        margin-bottom: 6px;
+      }
+      dd {
+        margin: 0;
+        font-weight: 700;
+      }
+      @media (max-width: 960px) {
+        .grid { grid-template-columns: 1fr; }
+        h1 { font-size: 32px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>HTECH Indigo Variations</h1>
+      <p class="intro">
+        인디고 블루를 HTECH의 기본 브랜드 톤으로 재정의한 variation 세트입니다.
+        전시·IR·웹·출력물에서 동일한 조형을 유지하면서도 배경과 상황에 맞는 농도 차이를 선택할 수 있도록 구성했습니다.
+      </p>
+      <section class="grid">
+        
+            <article class="card">
+              <div class="preview" style="background:#F7F8FC">
+                <img src="HTECH_LOGO_primary-indigo.svg" alt="Primary Indigo variation" />
+              </div>
+              <div class="meta">
+                <h2>Primary Indigo</h2>
+                <p>Default brand signature for web, proposal covers, and corporate decks</p>
+                <dl>
+                  <div><dt>Main</dt><dd>#3347C4</dd></div>
+                  <div><dt>Accent</dt><dd>#5870FF</dd></div>
+                  <div><dt>Text</dt><dd>#111111</dd></div>
+                </dl>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="preview" style="background:#F5F6FB">
+                <img src="HTECH_LOGO_deep-indigo.svg" alt="Deep Indigo variation" />
+              </div>
+              <div class="meta">
+                <h2>Deep Indigo</h2>
+                <p>Premium technical tone for B2B, IR, and semiconductor equipment materials</p>
+                <dl>
+                  <div><dt>Main</dt><dd>#1F2F8A</dd></div>
+                  <div><dt>Accent</dt><dd>#3B50C7</dd></div>
+                  <div><dt>Text</dt><dd>#111111</dd></div>
+                </dl>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="preview" style="background:#F5F6FB">
+                <img src="HTECH_LOGO_mono-indigo.svg" alt="Mono Indigo variation" />
+              </div>
+              <div class="meta">
+                <h2>Mono Indigo</h2>
+                <p>Single-color production for stamping, uniforms, engraved plates, and low-cost print</p>
+                <dl>
+                  <div><dt>Main</dt><dd>#4053CE</dd></div>
+                  <div><dt>Accent</dt><dd>#4053CE</dd></div>
+                  <div><dt>Text</dt><dd>#111111</dd></div>
+                </dl>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="preview" style="background:#1C276F">
+                <img src="HTECH_LOGO_reverse-indigo.svg" alt="Reverse Indigo variation" />
+              </div>
+              <div class="meta">
+                <h2>Reverse Indigo</h2>
+                <p>Single-color reverse signature on an indigo field for booths, hero banners, and dark presentation themes</p>
+                <dl>
+                  <div><dt>Main</dt><dd>#FFFFFF</dd></div>
+                  <div><dt>Accent</dt><dd>#FFFFFF</dd></div>
+                  <div><dt>Text</dt><dd>#FFFFFF</dd></div>
+                </dl>
+              </div>
+            </article>
+            
+            <article class="card">
+              <div class="preview" style="background:#000000">
+                <img src="HTECH_LOGO_black-background.svg" alt="Black Background variation" />
+              </div>
+              <div class="meta">
+                <h2>Black Background</h2>
+                <p>Single-color white signature on black for signage, LED, and dark production surfaces</p>
+                <dl>
+                  <div><dt>Main</dt><dd>#FFFFFF</dd></div>
+                  <div><dt>Accent</dt><dd>#FFFFFF</dd></div>
+                  <div><dt>Text</dt><dd>#FFFFFF</dd></div>
+                </dl>
+              </div>
+            </article>
+            
+      </section>
+    </main>
+  </body>
+</html>
